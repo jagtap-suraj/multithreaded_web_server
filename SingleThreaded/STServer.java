@@ -11,7 +11,7 @@ public class STServer {
     public void run() {
         int port = 8080; // Port to listen on
         try (ServerSocket serverSocket = new ServerSocket(port)) { // Open a socket on the given port
-            serverSocket.setSoTimeout(20000); // Set a timeout of 20 seconds, after which the socket will close
+            serverSocket.setSoTimeout(10000); // Set a timeout of 20 seconds, after which the socket will close
             System.out.println("Server is listening on port: " + port);
 
             while (true) {
